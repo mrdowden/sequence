@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sequence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Official Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <!-- Our project CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Sequence</h1>
+        </div>
+
+        <div class="jumbotron">
+            <p>Welcome to Sequence, the game of guessing number sequences.</p>
+            <p>Each number is a single digit, 0-9, with no number appearing more than once. You will have 10 chances to guess the correct number sequence.</p>
+            <p>To play, enter one number per field and click "Make Guess". You will be given feedback as follows:</p>
+            <ul>
+                <li>Green means you have correctly placed a number in the sequence</li>
+                <li>Yellow means the number exists within the sequence, but in a different position</li>
+                <li>Red means the number does not exist anywhere in the sequence</li>
+            </ul>
+            <p class="text-right"><button id="play" class="btn btn-primary btn-lg">Play Sequence</button></p>
+        </div>
+
+        <div id="game" class="hidden panel panel-primary">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-4"><input id="num1" type="text" maxlength="1" class="number"></div>
+                    <div class="col-xs-4"><input id="num1" type="text" maxlength="1" class="number"></div>
+                    <div class="col-xs-4"><input id="num1" type="text" maxlength="1" class="number"></div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button id="guess" class="btn btn-primary btn-lg">Make Guess</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Official JQuery -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Official Bootstrap -->
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Our project JS -->
+    <script src="game.js"></script>
+
+</body>
+
+</html>
