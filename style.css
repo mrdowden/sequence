@@ -10,3 +10,38 @@
 ul {
     font-size: 21px;
 }
+
+#game.container {
+    max-width: 500px;
+    min-width: 340px;
+}
+input.number {
+    font-size: 64px;
+    width: 100%;
+    min-width: 1em;
+    height: 2em;
+    text-align: center;
+    border: none;
+    background-color: #999999;
+    color: #ffffff;
+}
+input.number.red {
+    background-color: #aa3333;
+}
+input.number.green {
+    background-color: #33aa33;
+}
+input.number.yellow {
+    background-color: #d5c045;
+}
+#game p {
+    padding: 0.5em 0;
+    font-size: 16px;
+}
+#game .row .glyphicon {
+    position: absolute;
+    top: 4px;
+    right: 20px;
+    font-size: 16px;
+    color: white;
+}

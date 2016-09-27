@@ -30,19 +30,27 @@
             </ul>
             <p class="text-right"><button id="play" class="btn btn-primary btn-lg">Play Sequence</button></p>
         </div>
+    </div>
 
-        <div id="game" class="hidden panel panel-primary">
+    <div id="game" class="hidden container">
+        <div class="panel panel-primary">
+            <div class="hidden panel-heading">
+            </div>
             <div class="panel-body">
                 <div class="row">
-                    <div class="col-xs-4"><input id="num1" type="text" maxlength="1" class="number"></div>
-                    <div class="col-xs-4"><input id="num1" type="text" maxlength="1" class="number"></div>
-                    <div class="col-xs-4"><input id="num1" type="text" maxlength="1" class="number"></div>
+                    <div id="col1" class="col-xs-4"><span class="glyphicon"></span><input type="text" maxlength="1" class="number"></div>
+                    <div id="col2" class="col-xs-4"><span class="glyphicon"></span><input type="text" maxlength="1" class="number"></div>
+                    <div id="col3" class="col-xs-4"><span class="glyphicon"></span><input type="text" maxlength="1" class="number"></div>
                 </div>
+                <p>Guesses remaining: <span id="remaining"></span></p>
             </div>
             <div class="panel-footer">
                 <button id="guess" class="btn btn-primary btn-lg">Make Guess</button>
+                <button id="again" class="hidden btn btn-primary btn-lg">Play Again</button>
             </div>
         </div>
+        <div id="error" style="display: none" class="alert alert-danger" role="alert"></div>
+    </div>
 
     </div>
 
