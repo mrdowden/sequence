@@ -9,7 +9,7 @@ var Sequence = function() {
     }
     var shuffle = function(ary) {
         for(var i = ary.length - 1; i >= 1; i--) {
-            var r = Math.round(Math.random() * i);
+            var r = Math.round(Math.random() * (i+1));
             swap(ary, r, i);
         }
         return ary;
